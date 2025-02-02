@@ -10,7 +10,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 # Replace with your actual Gemini API key
-GEMINI_API_KEY = "AIzaSyAO41yoULATbDYiBNkQeOesOF8-5QrFd34"
+GEMINI_API_KEY = "Your_api_key"
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Define the Conversation History Model
