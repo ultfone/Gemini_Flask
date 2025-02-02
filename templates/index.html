@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Chat</title>
+</head>
+<body>
+    <h1>Ask Gemini</h1>
+    <form method="POST">
+        <input type="text" name="search" placeholder="Ask me anything..." required>
+        <button type="submit">Ask</button>
+    </form>
+
+    <h2>Conversation History</h2>
+    <ul>
+        {% for item in history %}
+            <li>
+                <strong>You:</strong> {{ item.user_query }}<br>  <!-- Use 'user_query' here -->
+                <strong>Gemini:</strong> {{ item.answer }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
