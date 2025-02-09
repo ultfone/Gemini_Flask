@@ -4,9 +4,8 @@ This project is a chatbot built using Flask and Google Gemini API. It stores con
 
 ## Features
 
-- Uses Flask for the web framework
 - Integrates Google Gemini API for AI-generated responses
-- Stores conversation history in an SQLite database
+- Stores conversation history in a SQLite database
 - Dynamically updates UI with Jinja templating
 
 ## Setup
